@@ -1,0 +1,756 @@
+/*  Here our font link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --backgroundColor: #1f1f1d;
+  --bgColor: #999;
+  --firstcolor: #ed8a08;
+  --secondcolor: #fc9803;
+  --buttonColor: #2dd641;
+  --whiteColor: #fafafa;
+  --blackColor: #000000;
+  --poppins: "Poppins", sans-serif;
+}
+
+/*  Horizontal line */
+
+/*  navComponent Css is here */
+.navComponent {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 15vh;
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
+  padding: 20px;
+}
+.navComponent > .logo {
+  flex: 1;
+  padding: 20px;
+  color: var(--whiteColor);
+  font-family: var(--poppins);
+  font-weight: 300;
+}
+.navComponent>.logo>h2{
+  animation: text-focus-in 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+.navComponent > .navbars > .navbar1 > ul {
+  display: flex;
+  justify-content: space-around;
+  animation: text-focus-in 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+.navComponent > .navbars > .navbar1 > ul > a > li {
+  list-style: none;
+  cursor: pointer;
+  padding: calc(13px - 2px);
+  border-radius: 2px;
+  transition: all ease 0.7s;
+  font-family: var(--poppins);
+  margin-right: 40px;
+}
+.menu {
+  display: none;
+}
+.closebutton {
+  display: none;
+  cursor: pointer;
+}
+.navComponent > .navbars > .navbar1 > ul > a {
+  text-decoration: none;
+  color: white;
+}
+
+.navComponent > .navbars > .navbar1 > ul > li:hover {
+  border: 1px solid var(--secondcolor);
+  box-shadow: 0.4px 0.4px 2px var(--secondcolor),
+    inset 0.4px 0.4px 2px var(--secondcolor);
+  background-color: var(--secondcolor);
+}
+
+/*  headerComponent Css is here  */
+.headerComponent {
+  margin-top: 15vh;
+  height: 85vh;
+  position: relative;
+}
+.headerComponent > .backgroundImage {
+  height: 100%;
+  width: 100%;
+}
+.headerComponent > .backgroundImage > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.headerComponent > .textonHeader {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  background: transparent;
+  width: 45%;
+}
+.headerComponent > .textonHeader > h3 {
+  font-size: 35px;
+  background: transparent;
+  color: var(--whiteColor);
+  text-transform: capitalize;
+  font-family: var(--poppins);
+}
+.headerComponent > .textonHeader > span {
+  font-size: 28px;
+  color: var(--bgColor);
+  letter-spacing: 2px;
+  font-family: var(--poppins);
+}
+.headerComponent > .textonHeader > span > b {
+  color: var(--secondcolor);
+}
+.cvDownload {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: var(--firstcolor);
+  overflow: none;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.cvDownload > a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--poppins);
+}
+
+/*  About me Component css is here  */
+.aboutme {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.aboutme > .me {
+  display: flex;
+  flex-direction: row;
+  max-width: 1024px;
+  width: 100%;
+}
+.aboutme > .me > .myphoto {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.aboutme > .me > .myphoto > .imgContainer {
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+}
+.aboutme > .me > .myphoto > .imgContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  animation: bounce-top 0.9s both;
+}
+/* animation css is here */
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+.aboutme > .me > .aboutmetext {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.aboutme > h3 {
+  font-size: 34px;
+  text-align: center;
+  font-family: var(--poppins);
+  margin: 20px 0px;
+  text-transform: uppercase;
+}
+.aboutme > .me > .aboutmetext > .abouthead > span {
+  font-size: 21px;
+  text-align: center;
+  font-family: var(--poppins);
+}
+.aboutme > .me > .aboutmetext > .abouthead > span > b {
+  color: var(--firstcolor);
+}
+.aboutme > .me > .aboutmetext > .abouthead > span > b > a {
+  text-decoration: none;
+  color: var(--firstcolor);
+}
+
+/*  Education Components here  */
+.educationComponent {
+  background-color: var(--backgroundColor);
+  color: var(--bgColor);
+  width: 100%;
+  height: max-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.educationComponent > h3 {
+  font-size: 34px;
+  text-align: center;
+  font-family: var(--poppins);
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.educationComponent > .education {
+  max-width: 1024px;
+  padding: 20px;
+}
+.educationComponent > .education > .schoolEducation > span > b {
+  font-size: 23px;
+  font-family: var(--poppins);
+  color: var(--bgColor);
+}
+.educationComponent > .education > .schoolEducation > span {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.educationComponent > .education > .schoolEducation > span > mark {
+  background-color: var(--secondcolor);
+  border-radius: 2px;
+}
+.educationComponent > .education > .schoolEducation > span > ul {
+  padding: 0px 20px;
+  color: var(--bgColor);
+}
+.educationComponent > .education > .schoolEducation > span > b[class="h2"] {
+  color: var(--bgColor);
+
+  font-size: 20px;
+  position: relative;
+  top: 20px;
+}
+.educationComponent > .education > .schoolEducation > span > p {
+  margin-top: 25px;
+  letter-spacing: 1px;
+}
+.educationComponent
+  > .education
+  > .schoolEducation
+  > span
+  > ul[class="collage"] {
+  margin-top: 20px;
+}
+
+/*  My Projects Component  css is here  */
+.myprojetsComponent {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.myprojetsComponent > h3 {
+  font-size: 33px;
+  font-family: var(--poppins);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.myprojetsComponent > .myprojects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myprojetsComponent > .myprojects > .maxWidth {
+  max-width: 1024px;
+  width: 100%;
+  padding: 0px 20px;
+}
+.myprojetsComponent
+  > .myprojects
+  > .maxWidth
+  > .firstproject
+  > h4[class="head"] {
+  font-size: 23px;
+  font-family: var(--poppins);
+  margin-top: 20px;
+  text-align: center;
+  margin: 50px 0px;
+}
+.myprojetsComponent
+  > .myprojects
+  > .maxWidth
+  > .firstproject
+  > h4
+  > b[class="pname"] {
+  font-size: 20px;
+  font-family: var(--poppins);
+}
+.myprojetsComponent
+  > .myprojects
+  > .maxWidth
+  > .firstproject
+  > h4[class="pdesc"] {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: var(--poppins);
+}
+.myprojetsComponent
+  > .myprojects
+  > .maxWidth
+  > .firstproject
+  > h4[class="pdesc"]
+  > span {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.myprojetsComponent
+  > .myprojects
+  > .maxWidth
+  > .firstproject
+  > span
+  > .keyfeatures {
+  margin-top: 20px;
+  font-family: var(--poppins);
+}
+.myprojetsComponent > .myprojects > .maxWidth > .firstproject > span > ul {
+  padding: 20px;
+  font-size: 18px;
+  font-family: var(--poppins);
+}
+.myprojetsComponent > .myprojects > .maxWidth > .firstproject > span > ul > li {
+  font-family: var(--poppins);
+  font-size: 16px;
+  line-height: 40px;
+}
+.myprojetsComponent
+  > .myprojects
+  > .maxWidth
+  > .firstproject
+  > span
+  > .outcomedetails {
+  font-size: 16px;
+  font-family: var(--poppins);
+}
+
+/*  certification Csss is here */
+
+.certification {
+  width: 100%;
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.certification > h3 {
+  text-align: center;
+  font-size: 34px;
+  font-family: var(--poppins);
+  color: var(--bgColor);
+}
+.certification > .certificationContainer {
+  color: var(--bgColor);
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.certification > .certificationContainer > .cImage {
+  flex: 1;
+  width: 300px;
+  height: 350px;
+}
+.certification > .certificationContainer > .cImage > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.certification > .certificationContainer > .Oraganization {
+  flex: 2;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: var(--poppins);
+}
+.certification > .certificationContainer > .Oraganization > span > ul > li {
+  line-height: 50px;
+}
+.certification
+  > .certificationContainer
+  > .Oraganization
+  > span
+  > ul
+  > li
+  > mark {
+  background-color: var(--secondcolor);
+}
+
+/*  Footer or address css id here */
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer > .footercont > h3 {
+  font-size: 34px;
+  font-family: var(--poppins);
+  text-transform: uppercase;
+  text-align: center;
+}
+.footer > .footercont {
+  width: 100%;
+  /* max-width: 1024px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.footer > .footercont > .footerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+}
+.footer > .footercont > .footerContainer > .footerChild {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer > .footercont > .footerContainer > .footerChild > ul > li {
+  list-style: none;
+  line-height: 50px;
+}
+
+.footer > .footercont > .footerContainer > .footerChild > ul > li > a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer > .footercont > .footerContainer > .rightfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer > .footercont > .footerContainer > .rightfooter > input {
+  width: 70%;
+  padding: 5px 10px;
+  overflow: none;
+  margin: 10px 0px;
+}
+.footer > .footercont > .footerContainer > .rightfooter > a > button {
+  width: 70%;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondcolor);
+  padding: 5px 0px;
+}
+.footer > .footercont > .footerContainer > .midfooter > ul > li > a {
+  width: 100%;
+  text-decoration: none;
+  color: var(--blackColor);
+}
+.footer > .footercont > .footerContainer > .rightfooter > a {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/*-------------------------------  Mobile  devlopment  css is here------------------------- */
+@media only screen and (max-width: 400px) {
+  .navComponent {
+    width: 100%;
+    padding: 0px;
+    transition: all ease 2s;
+  }
+  .navComponent > .logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 30px;
+  }
+  .navComponent > .logo > h2 {
+    font-size: 20px;
+  }
+  .navbars > .navbar1 {
+    display: none;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .menu {
+    display: block;
+    position: fixed;
+    right: 34px;
+    font-size: 23px;
+    bottom: 5px;
+    cursor: pointer;
+    top: 40px;
+    z-index: 999;
+    color: white;
+    height: 35px;
+  }
+
+  /*  Header Components  css */
+  .headerComponent {
+    width: 100%;
+    height: max-content;
+  }
+  .headerComponent > .backgroundImage {
+    width: 100%;
+    height: max-content;
+  }
+  .headerComponent > .backgroundImage > img {
+    width: 100%;
+  }
+  .headerComponent > .textonHeader {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    right: 0;
+    width: 70%;
+  }
+  .headerComponent > .textonHeader > h3 {
+    font-size: 16px;
+  }
+  .headerComponent > .textonHeader > span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .headerComponent > .textonHeader > span > i {
+    font-size: 10px !important;
+  }
+  .headerComponent > .textonHeader > button {
+    padding: 5px 10px !important;
+    font-size: 10px;
+  }
+
+  /* About me css */
+  .aboutme {
+    width: 100%;
+    height: max-content;
+    padding: 0px;
+  }
+  .aboutme > h3 {
+    font-size: 20px;
+  }
+  .aboutme > .me {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutme > .me > .myphoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutme > .me > .aboutmetext {
+    text-align: center !important;
+  }
+
+  /* Education css */
+  .educationComponent {
+    width: 100%;
+    max-width: 375px;
+  }
+  .educationComponent > h3 {
+    font-size: 21px;
+    margin: 0 !important;
+  }
+  .educationComponent > .education > .schoolEducation > span > b {
+    font-size: 16px !important;
+  }
+
+  /* my project viewers  */
+  .myprojetsComponent {
+    width: 100%;
+    max-width: 375px;
+  }
+  .myprojetsComponent > h3 {
+    font-size: 21px;
+  }
+  .myprojetsComponent
+    > .myprojects
+    > .maxWidth
+    > .firstproject
+    > h4[class="head"] {
+    margin: 10px 0px;
+    font-size: 15px;
+  }
+  .myprojetsComponent
+    > .myprojects
+    > .maxWidth
+    > .firstproject
+    > h4[class="head"]
+    > b {
+    font-size: 15px;
+  }
+  /* Certification css is here */
+  .certification {
+    width: 100%;
+    padding: 20px;
+    height: max-content;
+  }
+  .certification > h3 {
+    font-size: 21px;
+    margin: 30px 0px;
+  }
+  .certification > .certificationContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .certification > .certificationContainer > .cImage {
+    padding: 10px;
+  }
+  .certification > .certificationContainer > .Oraganization {
+    padding: 10px;
+  }
+  /* footer css is here */
+  .footer {
+    width: 100%;
+    height: max-content;
+  }
+  .footer > .footercont {
+    width: 100%;
+    max-width: 375px;
+  }
+  .footer > .footercont > h3 {
+    font-size: 21px;
+  }
+  .footer > .footercont > .footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer > .footercont > .footerContainer > .footerChild {
+    margin: 20px 0px;
+  }
+  .footer > .footercont > .footerContainer > .footerChild > ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer > .footercont > .footerContainer > .rightfooter {
+    display: none;
+  }
+
+  /*  ----------------------csss for on click event --------------------- */
+  .formob {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .moblogo {
+    position: relative;
+    flex: 0 !important;
+    top: 60px;
+    right: 60px;
+    flex: 0;
+  }
+  .mobnav > .navbar1 {
+    display: block !important;
+  }
+  .mobnav > .navbar1 > ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 65px;
+    right: 90px;
+  }
+  .mobnav > .navbar1 > ul > a {
+    margin-top: 20px;
+    transition: all ease 2s;
+  }
+  .mobnav > .navbar1 > ul > a:hover {
+    text-decoration: underline;
+  }
+  .mobcross {
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    top: 42px;
+    right: 35px;
+    color: white;
+    font-size: 24px;
+  }
+}

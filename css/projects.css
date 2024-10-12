@@ -1,0 +1,315 @@
+/*  Here our font link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --backgroundColor: #1f1f1d;
+  --bgColor: #999;
+  --firstcolor: #ed8a08;
+  --secondcolor: #fc9803;
+  --buttonColor: #2dd641;
+  --whiteColor: #fafafa;
+  --blackColor: #000000;
+  --poppins: "Poppins", sans-serif;
+}
+/*  navComponent Css is here */
+.navComponent {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 15vh;
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
+  padding: 20px;
+}
+.navComponent > .logo {
+  flex: 1;
+  padding: 20px;
+  color: var(--whiteColor);
+  font-family: var(--poppins);
+  font-weight: 300;
+}
+
+.navComponent > .navbars > .navbar1 > ul {
+  display: flex;
+  justify-content: space-around;
+}
+.navComponent > .navbars > .navbar1 > ul > a > li {
+  list-style: none;
+  cursor: pointer;
+  padding: calc(13px - 2px);
+  border-radius: 2px;
+  transition: all ease 0.7s;
+  font-family: var(--poppins);
+  margin-right: 40px;
+}
+.navComponent > .navbars > .navbar1 > ul > a {
+  text-decoration: none;
+  color: white;
+}
+
+.navComponent > .navbars > .navbar1 > ul > li:hover {
+  border: 1px solid var(--secondcolor);
+  box-shadow: 0.4px 0.4px 2px var(--secondcolor),
+    inset 0.4px 0.4px 2px var(--secondcolor);
+  background-color: var(--secondcolor);
+}
+/*  Card css */
+.projects {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.projects_container {
+  max-width: 1024px;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+}
+.project-card {
+  margin-top: 15vh;
+  position: relative;
+  overflow: hidden;
+  width: 300px; /* Adjust size as needed */
+  height: max-content; /* Adjust size as needed */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.project-details {
+  padding: 15px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.view-more {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #4285f4;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+  background-color: #3367d6;
+}
+
+/*  Footer or address css id here */
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--backgroundColor);
+  color: var(--bgColor);
+}
+.footer > .footercont > h3 {
+  font-size: 34px;
+  font-family: var(--poppins);
+  text-transform: uppercase;
+  text-align: center;
+}
+.footer > .footercont {
+  width: 100%;
+  /* max-width: 1024px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.footer > .footercont > .footerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+}
+.footer > .footercont > .footerContainer > .footerChild {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer > .footercont > .footerContainer > .footerChild > ul > li {
+  list-style: none;
+  line-height: 50px;
+}
+.footer > .footercont > .footerContainer > .footerChild > ul > li > a {
+  text-decoration: none;
+  color: var(--bgColor);
+}
+.footer > .footercont > .footerContainer > .rightfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer > .footercont > .footerContainer > .rightfooter > input {
+  width: 70%;
+  padding: 5px 10px;
+  overflow: none;
+  margin: 10px 0px;
+}
+.footer > .footercont > .footerContainer > .rightfooter > a > button {
+  width: 70%;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondcolor);
+  padding: 5px 0px;
+}
+.footer > .footercont > .footerContainer > .midfooter > ul > li > a {
+  width: 100%;
+  text-decoration: none;
+  color: var(--bgColor);
+}
+.footer > .footercont > .footerContainer > .rightfooter > a {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* --------------------------------Media  sreen csss is here ------------------------------ */
+@media only screen and (max-width: 400px) {
+  .navComponent {
+    width: 100%;
+    padding: 0px;
+    transition: all ease 2s;
+  }
+  .navComponent > .logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 30px;
+  }
+  .navComponent > .logo > h2 {
+    font-size: 20px;
+  }
+  .navbars {
+    display: none;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .menu {
+    display: block;
+    position: fixed;
+    right: 34px;
+    font-size: 23px;
+    bottom: 5px;
+    cursor: pointer;
+    top: 40px;
+    z-index: 999;
+    color: white;
+    height: 35px;
+  }
+  .projectContainermob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /*  ----------------------csss for on click event --------------------- */
+  .formob {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .moblogo {
+    position: relative;
+    flex: 0 !important;
+    top: 60px;
+    right: 60px;
+    flex: 0;
+  }
+  .mobnav {
+    display: block;
+  }
+  .mobnav > .navbar1 > ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 65px;
+    right: 90px;
+  }
+  .mobnav > .navbar1 > ul > a {
+    margin-top: 20px;
+    transition: all ease 2s;
+  }
+  .mobnav > .navbar1 > ul > a:hover {
+    text-decoration: underline;
+  }
+  .mobcross {
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    top: 42px;
+    right: 35px;
+    color: white;
+    font-size: 24px;
+  }
+  /* footer css is here */
+  .footer {
+    width: 100%;
+    height: max-content;
+  }
+  .footer > .footercont {
+    width: 100%;
+    max-width: 375px;
+  }
+  .footer > .footercont > h3 {
+    font-size: 21px;
+  }
+  .footer > .footercont > .footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer > .footercont > .footerContainer > .footerChild {
+    margin: 20px 0px;
+  }
+  .footer > .footercont > .footerContainer > .footerChild > ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer > .footercont > .footerContainer > .rightfooter {
+    display: none;
+  }
+}

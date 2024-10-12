@@ -1,0 +1,425 @@
+/*  Here our font link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --backgroundColor: #1f1f1d;
+  --bgColor: #999;
+  --firstcolor: #ed8a08;
+  --secondcolor: #fc9803;
+  --buttonColor: #2dd641;
+  --whiteColor: #fafafa;
+  --blackColor: #000000;
+  --poppins: "Poppins", sans-serif;
+}
+
+/*  Horizontal line */
+
+/*  navComponent Css is here */
+.navComponent {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 15vh;
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
+  padding: 20px;
+}
+.navComponent > .logo {
+  flex: 1;
+  padding: 20px;
+  color: var(--whiteColor);
+  font-family: var(--poppins);
+  font-weight: 300;
+}
+
+.navComponent > .navbars > .navbar1 > ul {
+  display: flex;
+  justify-content: space-around;
+}
+.navComponent > .navbars > .navbar1 > ul > a > li {
+  list-style: none;
+  cursor: pointer;
+  padding: calc(13px - 2px);
+  border-radius: 2px;
+  transition: all ease 0.7s;
+  font-family: var(--poppins);
+  margin-right: 40px;
+}
+.navComponent > .navbars > .navbar1 > ul > a {
+  text-decoration: none;
+  color: white;
+}
+
+.navComponent > .navbars > .navbar1 > ul > li:hover {
+  border: 1px solid var(--secondcolor);
+  box-shadow: 0.4px 0.4px 2px var(--secondcolor),
+    inset 0.4px 0.4px 2px var(--secondcolor);
+  background-color: var(--secondcolor);
+}
+/*  Here is my projects csss */
+.slider {
+  width: 100%;
+  margin-top: 15vh;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  height: 80vh;
+}
+.slider > .sliderContainer {
+  width: 100%;
+  max-width: 1024px;
+}
+.sliderImage {
+  width: 100%;
+  height: 80vh;
+}
+/*  about My First projects  */
+.projectDt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+}
+.projectDt > .projectDtConatiner {
+  width: 100%;
+  max-width: 1024px;
+}
+.projectDt > .projectDtConatiner > h3 {
+  text-align: center;
+  font-size: 34px;
+  font-family: var(--poppins);
+  font-weight: bold;
+  padding: 20px 0px;
+}
+.projectDt > .projectDtConatiner > .aboutproject {
+  font-size: 20px;
+  font-family: var(--poppins);
+}
+.projectDt > .projectDtConatiner > .features {
+  margin: 20px 0px;
+}
+.projectDt > .projectDtConatiner > .features > h3 {
+  font-size: 23px;
+  font-family: var(--poppins);
+}
+.projectDt > .projectDtConatiner > .features > ul {
+  padding: 25px;
+}
+.projectDt > .projectDtConatiner > .features > ul > li {
+  font-size: 18px;
+  font-family: var(--poppins);
+  line-height: 40px;
+}
+.projectDt > .projectDtConatiner > .features > ul > li > b {
+  font-weight: 600;
+}
+.projectDt > .projectDtConatiner > .techused > h3 {
+  font-family: var(--poppins);
+  font-size: 22px;
+}
+.projectDt > .projectDtConatiner > .techused > ul {
+  padding: 25px;
+}
+.projectDt > .projectDtConatiner > .techused > ul > li {
+  font-size: 18px;
+  font-family: var(--poppins);
+  line-height: 30px;
+}
+.projectDt > .projectDtConatiner > .achevements > h3 {
+  font-size: 23px;
+  font-family: var(--poppins);
+}
+.projectDt > .projectDtConatiner > .achevements > ul {
+  padding: 25px;
+}
+.projectDt > .projectDtConatiner > .achevements > ul > li {
+  font-size: 18px;
+  font-family: var(--poppins);
+  line-height: 30px;
+}
+.projectDt > .projectDtConatiner > .outcome > h3 {
+  font-size: 23px;
+  font-family: var(--poppins);
+}
+.projectDt > .projectDtConatiner > .outcome > p {
+  font-family: var(--poppins);
+}
+.projectDt > .projectDtConatiner > .moreProjects > p {
+  font-size: 23px;
+  font-family: var(--poppins);
+  padding: 20px 0px;
+}
+.projectDt > .projectDtConatiner > .moreProjects > ol > li {
+  font-size: 18px;
+  font-family: var(--poppins);
+}
+.projectDt > .projectDtConatiner > .moreProjects > ol > li > a {
+  text-decoration: none;
+  color: var(--backgroundColor);
+  cursor: pointer;
+}
+/*  Footer or address css id here */
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer > .footercont > h3 {
+  font-size: 34px;
+  font-family: var(--poppins);
+  text-transform: uppercase;
+  text-align: center;
+}
+.footer > .footercont {
+  width: 100%;
+  /* max-width: 1024px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.footer > .footercont > .footerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+}
+.footer > .footercont > .footerContainer > .footerChild {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer > .footercont > .footerContainer > .footerChild > ul > li {
+  list-style: none;
+  line-height: 50px;
+}
+
+.footer > .footercont > .footerContainer > .footerChild > ul > li > a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer > .footercont > .footerContainer > .rightfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer > .footercont > .footerContainer > .rightfooter > input {
+  width: 70%;
+  padding: 5px 10px;
+  overflow: none;
+  margin: 10px 0px;
+}
+.footer > .footercont > .footerContainer > .rightfooter > a > button {
+  width: 70%;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondcolor);
+  padding: 5px 0px;
+}
+.footer > .footercont > .footerContainer > .midfooter > ul > li > a {
+  width: 100%;
+  text-decoration: none;
+  color: var(--blackColor);
+}
+.footer > .footercont > .footerContainer > .rightfooter > a {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .navComponent {
+    width: 100%;
+    padding: 0px;
+    transition: all ease 2s;
+  }
+  .navComponent > .logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 30px;
+  }
+  .navComponent > .logo > h2 {
+    font-size: 20px;
+  }
+  .navbars {
+    display: none;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .menu {
+    display: block;
+    position: fixed;
+    right: 34px;
+    font-size: 23px;
+    bottom: 5px;
+    cursor: pointer;
+    top: 40px;
+    z-index: 999;
+    color: white;
+    height: 35px;
+  }
+
+  /*  ----------------------csss for on click event --------------------- */
+  .formob {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .moblogo {
+    position: relative;
+    flex: 0 !important;
+    top: 60px;
+    right: 60px;
+    flex: 0;
+  }
+  .mobnav {
+    display: block !important;
+  }
+  .mobnav > .navbar1 > ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 65px;
+    right: 90px;
+  }
+  .mobnav > .navbar1 > ul > a {
+    margin-top: 20px;
+    transition: all ease 2s;
+  }
+  .mobnav > .navbar1 > ul > a:hover {
+    text-decoration: underline;
+  }
+  .mobcross {
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    top: 42px;
+    right: 35px;
+    color: white;
+    font-size: 24px;
+  }
+
+  /* Slider css is here  */
+
+  .slider {
+    width: 100%;
+    margin-top: 11vh;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    height: 80vh;
+  }
+  .sliderImage {
+    object-fit: cover;
+  }
+  .projectDt > .projectDtConatiner > h3 {
+    text-align: center;
+    font-size: 19px;
+    font-family: var(--poppins);
+    font-weight: bold;
+    padding: 20px 0px;
+  }
+  .projectDt > .projectDtConatiner > .aboutproject {
+    font-size: 17px;
+    font-family: var(--poppins);
+    padding: 25px;
+  }
+  .projectDt > .projectDtConatiner > .features {
+    padding: 20px;
+    font-size: 17px;
+    margin: 0px;
+  }
+  .projectDt > .projectDtConatiner > .features > h3 {
+    font-size: 18px;
+    font-family: var(--poppins);
+    position: relative;
+    left: 10px;
+  }
+  .projectDt > .projectDtConatiner > .features > ul > li {
+    font-size: 17px;
+    font-family: var(--poppins);
+    line-height: 40px;
+  }
+  .projectDt > .projectDtConatiner > .features > ul > li > b {
+    font-weight: 500;
+  }
+  .techused {
+    padding: 0px 25px;
+  }
+  .techused > h3 {
+    font-size: 18px !important;
+    position: relative;
+    left: 10px;
+  }
+  .projectDt > .projectDtConatiner > .techused > ul > li {
+    font-size: 17px;
+    font-family: var(--poppins);
+    line-height: 40px;
+  }
+
+  .achevements {
+    padding: 0px 25px;
+  }
+  .achevements > h3 {
+    font-size: 18px !important;
+    position: relative;
+    left: 10px;
+  }
+  .outcome {
+    padding: 0px 25px;
+  }
+  .outcome > h3 {
+    font-size: 18px !important;
+  }
+  .moreProjects {
+    padding: 0px 25px;
+  }
+  .moreProjects > p {
+    font-size: 19px !important;
+  }
+  /* footer css is here */
+  .footer {
+    width: 100%;
+    height: max-content;
+  }
+  .footer > .footercont {
+    width: 100%;
+    max-width: 375px;
+  }
+  .footer > .footercont > h3 {
+    font-size: 21px;
+  }
+  .footer > .footercont > .footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer > .footercont > .footerContainer > .footerChild {
+    margin: 20px 0px;
+  }
+  .footer > .footercont > .footerContainer > .footerChild > ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer > .footercont > .footerContainer > .rightfooter {
+    display: none;
+  }
+}
