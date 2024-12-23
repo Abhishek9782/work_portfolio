@@ -539,7 +539,7 @@
 }
 
 /*-------------------------------  Mobile  devlopment  css is here------------------------- */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 767px) {
   .navComponent {
     width: 100%;
     padding: 0px;

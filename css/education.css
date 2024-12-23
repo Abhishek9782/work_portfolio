@@ -150,7 +150,7 @@
 }
 
 /* --------------------------------Media  sreen csss is here ------------------------------ */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
   .navComponent {
     width: 100%;
     padding: 0px;
