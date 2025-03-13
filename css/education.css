@@ -71,7 +71,18 @@
   margin-top: 18vh;
   font-family: var(--poppins);
 }
-
+/*  source of read  */
+.sourceofread > h4 {
+  font-family: var(--poppins);
+  text-align: center;
+  margin: 10px 0px;
+}
+.pdf-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+}
 /*  Footer or address css id here */
 
 .footer {

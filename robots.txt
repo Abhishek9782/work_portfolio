@@ -1,0 +1,7 @@
+# robots.txt for https://abhishek-mishra-mern-stack-developer.netlify.app/
+
+# Allow all crawlers to access everything
+User-agent: *
+Disallow:
+
+Sitemap: https://abhishek-mishra-mern-stack-developer.netlify.app/sitemap.xml

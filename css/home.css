@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 15vh;
+  height: 10vh;
   background-color: var(--blackColor);
   color: var(--whiteColor);
   padding: 20px;
@@ -38,10 +38,12 @@
   padding: 20px;
   color: var(--whiteColor);
   font-family: var(--poppins);
+  font-display: swap;
   font-weight: 300;
 }
 .navComponent > .logo > h2 {
-  animation: text-focus-in 2.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  font-size: 16px !important;
 }
 @keyframes text-focus-in {
   0% {
@@ -58,15 +60,17 @@
 .navComponent > .navbars > .navbar1 > ul {
   display: flex;
   justify-content: space-around;
-  animation: text-focus-in 2.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 .navComponent > .navbars > .navbar1 > ul > a > li {
   list-style: none;
   cursor: pointer;
   padding: calc(13px - 2px);
   border-radius: 2px;
-  transition: all ease 0.7s;
+  transition: all ease 0.2s;
   font-family: var(--poppins);
+  font-display: swap;
+
   margin-right: 40px;
 }
 .menu {
@@ -90,18 +94,22 @@
 
 /*  headerComponent Css is here  */
 .headerComponent {
-  margin-top: 15vh;
+  margin-top: 5vh;
   height: 85vh;
   position: relative;
 }
 .headerComponent > .backgroundImage {
   height: 100%;
   width: 100%;
+  background-color: var(--backgroundColor);
 }
-.headerComponent > .backgroundImage > img {
+.headerComponent > .backgroundImage > picture > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.bg-img {
+  width: 100%;
 }
 .headerComponent > .textonHeader {
   position: absolute;
@@ -116,12 +124,15 @@
   color: var(--whiteColor);
   text-transform: capitalize;
   font-family: var(--poppins);
+  font-display: swap;
+  left: 10%;
 }
 .headerComponent > .textonHeader > span {
   font-size: 28px;
   color: var(--bgColor);
   letter-spacing: 2px;
   font-family: var(--poppins);
+  font-display: swap;
 }
 .headerComponent > .textonHeader > span > b {
   color: var(--secondcolor);
@@ -139,6 +150,7 @@
   text-decoration: none;
   color: white;
   font-family: var(--poppins);
+  font-display: swap;
 }
 
 /*  About me Component css is here  */
@@ -172,10 +184,10 @@
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  animation: bounce-top 0.9s both;
+  /* animation: bounce-top 0.5 both; */
 }
 /* animation css is here */
-@keyframes bounce-top {
+/* @keyframes bounce-top {
   0% {
     -webkit-transform: translateY(-45px);
     transform: translateY(-45px);
@@ -226,7 +238,7 @@
     animation-timing-function: ease-out;
     opacity: 1;
   }
-}
+} */
 
 .aboutme > .me > .aboutmetext {
   flex: 2;
@@ -237,7 +249,7 @@
 .aboutme > h3 {
   font-size: 34px;
   text-align: center;
-  font-family: var(--poppins);
+  /* font-family: var(--poppins); */
   margin: 20px 0px;
   text-transform: uppercase;
 }
@@ -245,6 +257,7 @@
   font-size: 21px;
   text-align: center;
   font-family: var(--poppins);
+  font-display: swap;
 }
 .aboutme > .me > .aboutmetext > .abouthead > span > b {
   color: var(--firstcolor);
@@ -269,6 +282,8 @@
   font-size: 34px;
   text-align: center;
   font-family: var(--poppins);
+  font-display: swap;
+
   margin-top: 30px;
   text-transform: uppercase;
 }
@@ -279,6 +294,8 @@
 .educationComponent > .education > .schoolEducation > span > b {
   font-size: 23px;
   font-family: var(--poppins);
+  font-display: swap;
+
   color: var(--bgColor);
 }
 .educationComponent > .education > .schoolEducation > span {
@@ -323,6 +340,8 @@
 .myprojetsComponent > h3 {
   font-size: 33px;
   font-family: var(--poppins);
+  font-display: swap;
+
   text-align: center;
   text-transform: uppercase;
 }
@@ -346,6 +365,10 @@
   > h4[class="head"] {
   font-size: 23px;
   font-family: var(--poppins);
+  font-display: swap;
+
+  font-display: swap;
+
   margin-top: 20px;
   text-align: center;
   margin: 50px 0px;
@@ -358,6 +381,7 @@
   > b[class="pname"] {
   font-size: 20px;
   font-family: var(--poppins);
+  font-display: swap;
 }
 .myprojetsComponent
   > .myprojects
@@ -367,6 +391,7 @@
   margin-top: 20px;
   font-size: 18px;
   font-family: var(--poppins);
+  font-display: swap;
 }
 .myprojetsComponent
   > .myprojects
@@ -386,14 +411,18 @@
   > .keyfeatures {
   margin-top: 20px;
   font-family: var(--poppins);
+  font-display: swap;
 }
 .myprojetsComponent > .myprojects > .maxWidth > .firstproject > span > ul {
   padding: 20px;
   font-size: 18px;
   font-family: var(--poppins);
+  font-display: swap;
 }
 .myprojetsComponent > .myprojects > .maxWidth > .firstproject > span > ul > li {
   font-family: var(--poppins);
+  font-display: swap;
+
   font-size: 16px;
   line-height: 40px;
 }
@@ -421,6 +450,8 @@
   text-align: center;
   font-size: 34px;
   font-family: var(--poppins);
+  font-display: swap;
+
   color: var(--bgColor);
 }
 .certification > .certificationContainer {
@@ -447,6 +478,7 @@
   justify-content: flex-end;
   align-items: center;
   font-family: var(--poppins);
+  font-display: swap;
 }
 .certification > .certificationContainer > .Oraganization > span > ul > li {
   line-height: 50px;
@@ -471,6 +503,8 @@
 .footer > .footercont > h3 {
   font-size: 34px;
   font-family: var(--poppins);
+  font-display: swap;
+
   text-transform: uppercase;
   text-align: center;
 }
@@ -543,7 +577,7 @@
   .navComponent {
     width: 100%;
     padding: 0px;
-    transition: all ease 2s;
+    transition: all ease 0.5;
   }
   .navComponent > .logo {
     margin: 0;
@@ -557,6 +591,7 @@
   .navbars > .navbar1 {
     display: none;
   }
+
   /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   .menu {
     display: block;
@@ -565,7 +600,7 @@
     font-size: 23px;
     bottom: 5px;
     cursor: pointer;
-    top: 40px;
+    top: 20px;
     z-index: 999;
     color: white;
     height: 35px;
@@ -574,7 +609,8 @@
   /*  Header Components  css */
   .headerComponent {
     width: 100%;
-    height: max-content;
+    height: 50vh;
+    background-color: var(--backgroundColor);
   }
   .headerComponent > .backgroundImage {
     width: 100%;
@@ -586,7 +622,7 @@
   .headerComponent > .textonHeader {
     position: absolute;
     top: 20%;
-    left: 25%;
+    left: 15%;
     right: 0;
     width: 70%;
   }
@@ -628,6 +664,9 @@
   .aboutme > .me > .aboutmetext {
     text-align: center !important;
   }
+  .aboutme > .me > .aboutmetext > .abouthead > span {
+    font-size: 15px !important;
+  }
 
   /* Education css */
   .educationComponent {
@@ -646,9 +685,15 @@
   .myprojetsComponent {
     width: 100%;
     max-width: 375px;
+    display: flex;
+    justify-self: center;
+    padding: 10px;
   }
   .myprojetsComponent > h3 {
     font-size: 21px;
+  }
+  .myprojetsComponent > h3 > b {
+    display: block;
   }
   .myprojetsComponent
     > .myprojects
@@ -739,7 +784,7 @@
   }
   .mobnav > .navbar1 > ul > a {
     margin-top: 20px;
-    transition: all ease 2s;
+    transition: all ease 0.5s;
   }
   .mobnav > .navbar1 > ul > a:hover {
     text-decoration: underline;
@@ -748,7 +793,7 @@
     display: block;
     z-index: 1000;
     position: fixed;
-    top: 42px;
+    top: 20px;
     right: 35px;
     color: white;
     font-size: 24px;
